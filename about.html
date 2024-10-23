@@ -4,65 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulsebit|Tech in bits</title>
-    <link rel="stylesheet" href="about.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="home.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
 </head>
 <body>
+    <header>
+        <!--Navbar Section-->
     <nav>
-        <div class="menu">
-            <div class="logo">
-                <a href="#">Pulsebit</a>
+        <div class="nav-header">
+            <div class="nav-logo">
+                <a href="#" class="logo">Pulse<span>bit</span></a>
             </div>
-            <ul>
+            <div class="nav-menu-btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">Feature</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li>
+                    <button class="btn">Contact Us</button>
+                </li>
             </ul>
-        </div>
     </nav>
-    <div class="profile-card">
-        <div class="image">
-            <img src="Images/IMG_2822.JPG" alt="" class="profile-img">
-        </div>
-        <div class="text-data">
-            <span class="name">Pulsebit</span>
-            <span class="job">Tech in bits</span>
-        </div>
-        <div class="media-buttons">
-            <a href="#" style="background-color: #4267b2" class="link">
-                <i class='bx bxl-linkedin'></i>
-            </a>
-            <a href="#" style="background-color: #1da1f2" class="link">
-                <i class='bx bxl-facebook'></i>
-            </a>
-            <a href="#" style="background-color: #e1306c" class="link">
-                <i class='bx bxl-twitter'></i>
-            </a>
-        </div>
-        <div class="buttons">
-            <button class="button">Subscribe</button>
-            <button class="button">Message</button>
-        </div>
-        <div class="analytics">
-            <div class="data">
-                <i class='bx bx-heart'></i>
-                <span class="number">60k</span>
-            </div>
-            <div class="data">
-                <i class='bx bx-message-rounded-dots'></i>
-                <span class="number">60k</span>
-            </div>
-            <div class="data">
-                <i class='bx bxs-share'></i>
-                <span class="number">60k</span>
-            </div>
-        </div>
+    <!-- Main Section -->
+    <div>
+        <img src="Images/IMG_2822.JPG" alt="me">
     </div>
-    <footer>
-        <p class="copy">Copyright &copy; 2024 All rights reserved. Bindawdi Enterprise</p>
+    <!--Footer Section-->
+    <footer class="footer" id="news">
+        <div class="section-container footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Pulse<span>bit</span></a>
+                </div>
+                <ul class="footer-links">
+                    <li>
+                        <a href="#"><span></span><i class="ri-phone-line"></i>
+                            +233 551 333 780</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><span></span><i class="ri-map-pin-line"></i>Yendi, Northern Region</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><span></span><i class="ri-mail-line"></i> iddrisusulemana665@gmail.com</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Menu</h4>
+                <ul class="header-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2>Join our newsletter</h2>
+                <p>Stay turned for new product updates</p>
+                <form action="/">
+                    <input type="text" placeholder="Your email here">
+                    <button class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bar">
+            Copyright <i class="ri-copyright-line"></i> 2024 Bindawdi Enterprise.
         </div>
     </footer>
+    <script src="home.js"></script>
 </body>
 </html>
