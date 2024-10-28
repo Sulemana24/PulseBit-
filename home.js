@@ -1,5 +1,5 @@
-const menuBtn = document.getElementById("menu-btn");
-const navLinks = document.getElementById("nav-links");
+const menuBtn = document.getElementById("menu-line");
+const navLinks = document.getElementById("ul-links");
 const menuBtnIcon = menuBtn.querySelector("i");
 
 menuBtn.addEventListener("click", (e) => {

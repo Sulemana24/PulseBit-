@@ -137,14 +137,7 @@ ul{
     color: var(--extra-light);
 }
 
-.header-links{
-    display: grid;
-    gap: 0.8rem;
-}
-.header-links li a{
-    display: grid;
-    gap: 5rem;
-}
+
 .footer-col h4{
     font-size: 1.5rem;
     font-weight: 600;
