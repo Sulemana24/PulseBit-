@@ -607,6 +607,10 @@ footer{
         grid-template-columns: repeat(3, 1fr);
 
     }
+    
+     #column{
+        margin: 0;
+    }
 
     #column{
         margin: 0;
