@@ -1,7 +1,7 @@
 
           /* Hero Section */
 
-          .hero-section{
+        .hero-section{
             display: flex;
             /* padding: 8rem 1rem 5rem; */
             flex-direction: column;
@@ -9,7 +9,6 @@
         }
         
         .header-content{
-            padding: 2rem 1rem 5rem;
             display: inline-block;
             align-items: center;
             margin: 0;
@@ -20,12 +19,11 @@
         .header-content h1{
             text-align: center;
             font-size: 3rem;
-            padding-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
         
         .header-content p{
             text-align: center;
-            padding: 1rem 0;
             color: var(--text-light);
         }
         
@@ -41,9 +39,6 @@
             padding: .75rem 1.5rem;
             outline: none;
             border: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
             font-size: 1rem;
             color: var(--text-dark);
             white-space: nowrap;
@@ -57,88 +52,107 @@
             font-size: 1.2rem;
             font-weight: 500;
         }
-        
-        .btn:nth-child(2) a{
-            color: purple;
-        }
-        
-        .btn:nth-child(2){
-            display: flex;
-            align-items: center;
+
+        .play-btn {
             background: transparent;
-            border: 1px solid;
+            border: 1px solid purple;
             cursor: pointer;
-            
+            padding: .6rem 1.5rem;
+            outline: none;
+            font-size: 1rem;
+            color: purple;
+            border-radius: 2rem;
+            transition: 0.3s;
+            text-align: center;
         }
+        
+        .play-btn:hover {
+            background: purple;
+            color: #fff;
+        }
+        
+        
+        .play-btn span{
+            font-size: 1.2rem;
+            padding-left: 0.5rem;
+        }
+
+        
+        /* 
         .header-btns .btn:nth-child(2) span{
             font-size: 1.2rem;
             padding-left: 0.5rem;
             
-        }
+        } */
         
-        .header-btns .btn:last-child:hover,
+        /* .header-btns .btn:last-child:hover,
         .header-btns .btn:last-child a:hover{
             background-color: purple;
             color: #fff;
             
-        }
+        } */
         
         .btn:hover{
             background-color: var(--primary-color-dark);
         }
         
         .hero-section img{
-            margin-top: 8rem;
             width: 100%;
-            margin-bottom: 2.5rem;
-            padding: 0;
+            padding-bottom: 2.5rem;
         }
 
         @media (width > 768px){
-          
+
     .hero-section{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      padding: 2rem 0 3rem;
-      margin: 0;
-  }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 3rem;
+        align-items: center;
+    }
 
-  .header-content{
-      padding: 0;
-  }
+    .header-content{
+    padding: 0 3rem;
+    order: 1;
 
-  .header-content h1{
-      padding: 0 2.5rem;
-      font-size: 4rem;
-      text-align: left;
-  }
+    }
 
-  .header-content p{
-      padding: 0 2.5rem;
-      line-height: 2;
-      text-align: left;
-  }
+    .header-content h1{
+    font-size: 4rem;
+    text-align: left;
+    }
 
-  .btn{
-      font-size: 18px;
-  }
+    .header-content p{
+    line-height: 2;
+    text-align: left;
+    }
 
-  .btn span{
-      font-size: 1.5rem;
-  }
+    .btn{
+    font-size: 18px;
+    }
 
-  .header-btns{
-      display: flex;
-      padding: 0 2.5rem;
-      justify-content: flex-start;
-      gap: 1.5rem;
-      padding-top: 2.5rem;
-  }
+    .btn span{
+    font-size: 1.5rem;
+    }
 
-  .hero-section img{
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      border-radius: 5px;
-  }
-        }
+    .header-btns{
+        display: flex;
+        padding: 0 2.5rem;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        padding-top: 2.5rem;
+    }
+
+    .hero-section img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 5px;
+        order: 2;
+    }
+}
+
+@media (width > 800px) {
+    .header-content{
+        padding-top: 3rem;
+    }
+}
