@@ -100,7 +100,7 @@ body.dark-mode{
     background: #0056b3;
 }
 
-  /* Close Button */
+
 
     .btn-close {
     position: absolute;
@@ -112,7 +112,7 @@ body.dark-mode{
     cursor: pointer;
 }
 
-/* Close Button Styling */
+
 
 .btn-close {
     position: absolute;
@@ -127,7 +127,7 @@ body.dark-mode{
     }
 
     .btn-close:hover {
-    color: #ff0000; /* Highlight effect */
+    color: #ff0000; 
 }
 
 
