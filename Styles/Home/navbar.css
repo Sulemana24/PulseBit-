@@ -1,0 +1,141 @@
+      /* Nav Section */
+    header{
+        display: grid;
+        overflow: hidden;
+    }
+    
+    nav{
+        position: fixed;
+        isolation: isolate;
+        width: 100%;
+        z-index: 9;
+    }
+    
+    .nav-header{
+        padding: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--primary-color);
+    }
+    
+    .nav-menu-btn{
+        font-size: 1.5rem;
+        color: var(--text-dark);
+        cursor: pointer;
+    }
+    
+    .nav-links{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        background-color: var(--primary-color);
+        transition: transform .3s;
+        z-index: -1;
+    }
+    
+    .logo{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--text-dark);
+    }
+    
+    .logo span{
+        font-size: 1.2rem;
+    }
+    
+    a{
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    ul{
+        list-style: none;
+    }
+    
+    .nav-links.open{
+        transform: translateY(100%);
+    }
+    
+    .nav-links a{
+        color: var(--text-dark);
+    }
+    
+    .nav-links btn{
+        background-color: var(--primary-color);
+    }
+
+    .nav-links:hover.nav-links a:hover{
+    color: var(--white);
+    }
+
+
+    @media (width > 768px){
+
+
+    header{
+    background-color: #91e73c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      /* margin-bottom: 5rem; */
+    }
+
+    nav{
+        position: static;
+        padding-block: 2rem 0;
+        padding-inline: 1rem;
+        max-width: var(--max-width);
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+    }
+
+    .nav-header{
+    flex: 1;
+    padding: 0;
+    background-color: transparent;
+    }
+
+    .nav-logo{
+    max-width: 40px;
+    padding-bottom: 0.5rem;
+    }
+
+    .nav-logo span{
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    }
+
+    .nav-menu-btn{
+    display: none;
+    }
+
+    .nav-links{
+    position: static;
+    width: fit-content;
+    padding: 0 0 8px 0;
+    flex-direction: row;
+    gap: 3rem;
+    background-color: transparent;
+    transform: none;
+    }
+
+    .nav-links a{
+    color: var(--text-dark);
+    }
+
+    }
+
+
+
