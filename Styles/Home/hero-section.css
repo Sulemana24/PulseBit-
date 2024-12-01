@@ -5,7 +5,6 @@
             display: flex;
             /* padding: 8rem 1rem 5rem; */
             flex-direction: column;
-            
         }
         
         .header-content{
@@ -76,21 +75,6 @@
             font-size: 1.2rem;
             padding-left: 0.5rem;
         }
-
-        
-        /* 
-        .header-btns .btn:nth-child(2) span{
-            font-size: 1.2rem;
-            padding-left: 0.5rem;
-            
-        } */
-        
-        /* .header-btns .btn:last-child:hover,
-        .header-btns .btn:last-child a:hover{
-            background-color: purple;
-            color: #fff;
-            
-        } */
         
         .btn:hover{
             background-color: var(--primary-color-dark);
@@ -101,7 +85,7 @@
             padding-bottom: 2.5rem;
         }
 
-        @media (width > 768px){
+    @media (width > 768px){
 
     .hero-section{
         display: grid;
@@ -151,8 +135,15 @@
     }
 }
 
+
 @media (width > 800px) {
     .header-content{
         padding-top: 3rem;
     }
+
+    .header-btns{
+        margin: 0;
+        padding: 16px 0;
+    }
+
 }

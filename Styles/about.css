@@ -139,31 +139,7 @@ img{
     margin-left: 1rem;
 }
 
-.social-share{
-    width: 100%;
-    /* margin-left: 8rem; */
-    cursor: pointer;
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.social-share a{
-    
-    /* border: 2px solid var(--extra-light); */
-    border-radius: 5px;
-    margin: 0 0.2rem;
-    /* padding: 3px; */
-    font-size: 18px;
-    color: var(--text-dark);
-    background-color: var(--primary-color);
-    }
-
-    .social-share a:hover{
-    background-color: var(--primary-color);
-    color: var(--white);
-    }
 
     footer {
         background-color: var(--primary-color);

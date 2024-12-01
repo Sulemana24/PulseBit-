@@ -12,7 +12,6 @@
 /* Featured Articles Carousel */
 .featured-articles {
   padding: 2rem 0;
-  /* background-color: #f4f4f4; */
   text-align: center;
   margin-top: 2rem;
 }
@@ -42,6 +41,7 @@
   border-bottom: 2px solid var(--text-light);
 
 }
+
 
 
 @media (width > 768px){

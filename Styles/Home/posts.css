@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #91e73c;
+    --primary-color-dark: #7ac232;
+    --text-dark: #000;
+    --text-light: #9ca3af;
+    --extra-light: #f3f4f6;
+    --white: #fff;
+    --max-width: 1200px;
+    --header-font: "DM Sans", sans-serif;
+}
+
+     /* General Styles */
+    
+     *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  html,
+  body{
+      scroll-behavior: smooth;
+  }
+  
+  body{
+      font-family: "Poppins", sans-serif;
+  }
+
+.content {
+  max-width: 800px;
+  margin: 5rem auto 2rem;
+  padding: 0 1rem;
+}
+
+.post {
+  border-bottom: 1px solid var(--text-light);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.post p{
+  font-size: 13px;
+  line-height: 1.2rem;
+}
+
+.post img{
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.post h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color-dark);
+  text-align: center;
+}
+
+.post .meta {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.post .author {
+  color: var(--primary-color-dark);
+  font-weight: bold;
+}
+
+/* Reactions Section */
+.reactions {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.reaction-btn {
+  background: var(--primary-color-dark);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.reaction-btn:hover {
+  background: var(--primary-color);
+}
+
+/* Comments Section */
+.comments {
+  margin-top: 3rem;
+}
+
+
+.comment-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.comment-form button {
+  background: var(--primary-color-dark);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.comment-form button:hover {
+  background: var(--primary-color);
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comment-list li {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.comment-list strong {
+  color: var(--text-dark);
+}
+
+.similar-articles {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.similar-articles h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.similar-article {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.similar-article img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.similar-article h4 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--primary-color-dark);
+}
+
+.similar-article h4 a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.similar-article h4 a:hover {
+  text-decoration: underline;
+}
+
+.similar-article p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.share-btn{
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #005bb5;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.share-btn i {
+  font-size: 1.2rem;
+}
+
+.share-btn:hover {
+  background-color: #0077B5;
+}
+
+
+.post-ul{
+  margin-left: 2rem;
+}
+
+.post-ul li{
+  list-style: disc;
+}
+
+
+@media screen and (max-width: 768px) {
+  .content {
+    max-width: 95%;
+    padding: 0 0.5rem;
+  }
+
+  .post h2 {
+    font-size: 1.4rem;
+  }
+
+  .post p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .reaction-btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .comment-form textarea {
+    font-size: 0.8rem;
+  }
+
+  .comment-form button{
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .share-buttons {
+    flex-wrap: wrap;
+  }
+
+  .share-btn {
+    margin: 0.5rem 0.5rem 0 0;
+  }
+
+  .content{
+    margin-top: 5.5rem;
+  }
+
+  
+  .post h2{
+    text-align: left;
+  }
+
+}
