@@ -102,12 +102,20 @@ footer {
 
 .footer-bar{
   color: var(--white);
-  padding: 1rem 1rem 3rem;
+  padding: 1rem 1rem 2rem;
   font-size: .9rem;
   color: var(--text-dark);
   text-align: center;
   border-top: 1px solid var(--text-light);
   background-color: var(--primary-color);
+}
+
+.footer-bar p:last-child{
+  margin-top: 1rem;
+  border-top: 2px solid var(--text-dark);
+  border-bottom: 2px solid var(--text-dark);
+  display: inline-block;
+  font-size: 12px;
 }
 
 @media (min-width: 768px) {
@@ -117,6 +125,10 @@ footer {
 
   .footer-col {
       text-align: left;
+  }
+
+  .footer-bar{
+    padding-bottom: 1rem;
   }
 }
 

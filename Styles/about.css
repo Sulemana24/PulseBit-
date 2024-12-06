@@ -153,12 +153,6 @@ img{
         grid-template-columns: 1fr;
         max-width: 1200px;
         margin: 0 auto;
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 2rem;
-        max-width: 1200px;
-        margin: 0 auto; */
     }
     
     .footer-col {
@@ -265,6 +259,16 @@ img{
     
         .footer-col {
             text-align: left;
+        }
+
+        .about-container{
+            display: flex;
+            gap: 20px;
+        }
+
+        img{
+            width: 50%;
+            height: auto;
         }
     }
     

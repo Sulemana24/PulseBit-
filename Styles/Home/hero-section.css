@@ -43,7 +43,7 @@
             white-space: nowrap;
             background-color: var(--primary-color);
             border-radius: 2rem;
-            transition: 0.3s;
+            transition: background-color 0.3s ease;
             cursor: pointer;
         }
         
