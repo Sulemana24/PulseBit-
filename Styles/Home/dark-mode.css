@@ -13,6 +13,7 @@
   transition: background-color 0.3s, color 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
+
 #darkModeToggle.dark-active {
   background-color: var(--text-dark); 
   border: 2px solid var(--extra-light); 
