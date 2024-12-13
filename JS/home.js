@@ -25,7 +25,6 @@
     }
 
 
-
     darkModeToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
         darkModeToggle.classList.toggle('dark-active'); 
@@ -42,6 +41,7 @@
     function scrollFunction() {
         document.getElementById("backToTop").style.display = document.documentElement.scrollTop > 20 ? "block" : "none";
     }
+    
     function topFunction() {
         document.documentElement.scrollTop = 0;
     }
@@ -82,23 +82,19 @@
 
     // Get elements
     const popup = document.getElementById('newsletterPopup');
-    const closePopup = document.getElementById('closePopup');
     const form = document.getElementById('newsletterForm');
 
     // Check subscription status
     const isSubscribed = localStorage.getItem('subscribed');
 
     // Show the pop-up only if the user is not subscribed
+
     if (!isSubscribed) {
         setTimeout(() => {
         popup.style.display = 'flex';
-    }, 10000); // Adjust timing as needed
+    }, 10000); 
     }
 
-    // Close the pop-up without subscribing
-    closePopup.addEventListener('click', () => {
-    popup.style.display = 'none';
-    });
 
     // Handle the subscription form submission
 
@@ -122,9 +118,6 @@
     }
     });
 
-    const currentURL = window.location.href;
-
-
-    document.querySelector('.share-btn-facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentURL)}`;
-    document.querySelector('.share-btn-twitter').href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentURL)}&text=Check%20out%20this%20post!`;
-    document.querySelector('.share-btn-linkedin').href = `https://www.linkedin.com/shareArticle?url=${encodeURIComponent(currentURL)}&title=Check%20out%20this%20post!`;
+    function goToPost(postIndex) {
+        window.location.href = `./display-post.html?post=${postIndex}`;
+    }

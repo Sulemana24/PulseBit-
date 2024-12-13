@@ -18,6 +18,8 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"
     />
+    <script src="JS/home.js" defer></script>
+    <script src="/JS/post-details.js" defer></script>
 </head>
 <body>
     <header>
@@ -52,7 +54,7 @@
         <h1>The Future of Artificial Intelligence</h1>
         <p>Artificial Intelligence (AI) is reshaping industries, redefining human capabilities, and inspiring both awe and caution. As the technology matures, its potential to revolutionize the way we live, work, and interact with the world becomes increasingly evident. From autonomous vehicles to predictive healthcare systems, AI's integration into our daily lives signals an era of unprecedented change. But as this evolution continues, it also raises critical questions about ethics, governance, and the very fabric of society.  </p>
     <div class="header-btns">
-        <button class="btn" onclick="window.location.href='/posts.html'">Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
+        <button class="btn" onclick="goToPost(0)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
         <a href="https://www.youtube.com/watch?v=dv9q7Ema40k" target="_blank" class="play-btn">
                 Play Video <span><i class="ri-play-circle-fill"></i></span>
             </a>
@@ -72,19 +74,20 @@
                 <img src="/Images/computer2.jpg" alt="computer" loading="lazy">
                 <h3>How AI is Shaping the Future</h3>
                 <p>Artificial Intelligence (AI) is no longer a concept confined to science fiction; it has firmly established itself as a cornerstone of modern technology, driving innovation across industries.</p>
-                <a href="/post2.html" class="btn">Read More <span><i class="ri-arrow-right-up-line"></i></span></a>
+                <button class="btn" onclick="goToPost(1)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
+                <!--  <a href="/posts.html" class="btn">Read More <span><i class="ri-arrow-right-up-line"></i></span></a> -->
             </div>
             <div class="carousel-item">
                 <img src="/Images/chrome1.jpg" alt="artistic background" loading="lazy">
                 <h3>Top 10 Chrome Extensions for Business</h3>
                 <p>Google Chrome has become one of the most popular browsers for professionals and business owners due to its speed, versatility, and vast selection of extensions.</p>
-                <a href="/post6.html" class="btn">Read More <span><i class="ri-arrow-right-up-line"></i></span></a>
+                <button class="btn" onclick="goToPost(2)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
             </div>
             <div class="carousel-item">
                 <img src="/Images/pc phone.jpg" alt="pc and phone" loading="lazy">
                 <h3>Web Design Trends to Watch</h3>
                 <p>As we approach 2025, the landscape of web design continues to evolve, driven by technological advancements and changing user expectations.</p>
-                <a href="/post7.html" class="btn">Read More <span><i class="ri-arrow-right-up-line"></i></span></a>
+                <button class="btn" onclick="goToPost(3)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
             </div>
         </div>
 </section>
@@ -97,22 +100,23 @@
 <div class="feature-content">
     <div class="web-side1">
         <h3 class="section-header">1. Android Developers are in High Demand in Europe</h3>
-        <p>The tech job market in Europe is experiencing a significant surge in demand for Android developers. With the rapid growth of mobile technologies and the dominance of Android as the world’s leading mobile operating system, businesses across industries are seeking skilled professionals to build and maintain high-quality applications.
+        <p>
+        The tech job market in Europe is experiencing a significant surge in demand for Android developers. With the rapid growth of mobile technologies and the dominance of Android as the world’s leading mobile operating system, businesses across industries are seeking skilled professionals to build and maintain high-quality applications.
         </p>
-        <button class="btn" onclick="window.location.href='/post8.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+        <button class="btn" onclick="goToPost(4)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
         
         <h3 class="section-header">2. Top 10 Programming Languages to Learn in 2024.</h3>
         <p>The demand for programming skills continues to grow across industries, making it an exciting time to dive into coding. But with so many languages to choose from, deciding where to focus your efforts can be challenging.
         </p>
-        <button class="btn" onclick="window.location.href='/post10.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+        <button class="btn" onclick="goToPost(5)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
         <h3 class="section-header">3. The Biggest Lesson I’ve Learned This Year</h3>
         <p>As the year draws to a close, I find myself reflecting on the experiences, challenges, and triumphs that have shaped me. Among them all, one lesson stands out, resonating deeply and influencing how I approach life, work, and relationships:
         </p>
-        <button class="btn" onclick="window.location.href='/post12.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+        <button class="btn" onclick="goToPost(6)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
         <h3 class="section-header">4. Why you should Start Coding?</h3>
         <p>In today’s fast-paced, technology-driven world, coding has become more than just a skill—it’s a superpower.
         </p>
-        <button class="btn" onclick="window.location.href='/post4.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+        <button class="btn" onclick="goToPost(7)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
 
     <!-- Popular Tags Section -->
 <section class="popular-tags">
@@ -150,17 +154,17 @@
             <p>
                 Microsoft has rolled out its latest Windows updates, bringing a host of new features, performance improvements, and security enhancements.
             </p>
-            <button class="btn" onclick="window.location.href='/post3.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+            <button class="btn" onclick="goToPost(8)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
             <h4>2. Starting a career in Tech? This might help!</h4>
             <p>
                 The tech industry is one of the fastest-growing and most dynamic fields globally, offering a plethora of opportunities for anyone willing to learn and adapt.
             </p>
-            <button class="btn" onclick="window.location.href='/post13.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+            <button class="btn" onclick="goToPost(9)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
             <h4>3. AI can help you start a YouTube Channel more easily.</h4>
             <p>
                 Starting a YouTube channel is an exciting venture, but it comes with challenges like content creation, editing, and audience engagement. Fortunately, AI tools can simplify these tasks, allowing you to focus more on your creative vision. Here’s how AI can make starting and running your YouTube channel much easier.
             </p>
-            <button class="btn" onclick="window.location.href='/post14.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+            <button class="btn" onclick="goToPost(10)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
         </div>
     
         <!-- Business Content -->
@@ -169,16 +173,16 @@
             <p>
                 Starting a business in 2025 comes with its own set of challenges and opportunities. Rapid advancements in technology, evolving consumer behaviors, and an interconnected global market present a unique environment for entrepreneurs.
             </p>
-            <button class="btn" onclick="window.location.href='/post9.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+            <button class="btn" onclick="goToPost(11)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
             <h4>2. Top 10 Business Strategies for Growth</h4>
             <p>
                 Achieving sustained growth is a primary goal for any business, but it requires deliberate planning and execution. Whether you’re running a startup, a small business, or a large corporation, these top 10 strategies can help drive growth, increase profitability, and build a robust brand.</p>
-            <button class="btn" onclick="window.location.href='/post15.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+                <button class="btn" onclick="goToPost(12)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
             <h4>3. AI in Business Decision Making</h4>
             <p>
                 AI in Business Decision Making: Revolutionizing Strategic Thinking  Artificial Intelligence (AI) is transforming how businesses operate, offering data-driven insights, predictive analytics, and automation that enhance decision-making.
             </p>
-            <button class="btn" onclick="window.location.href='/post11.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+            <button class="btn" onclick="goToPost(13)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
         </div>
     
         <!-- Education Content -->
@@ -187,16 +191,16 @@
             <p>
                 In recent years, online learning has transitioned from a supplementary educational tool to a primary mode of learning for millions worldwide.  The pandemic accelerated its adoption, but the momentum it has gained shows no signs of slowing down. 
             </p>
-            <button class="btn" onclick="window.location.href='/post5.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+            <button class="btn" onclick="goToPost(14)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
             <h4>2. Top Educational Apps in 2024</h4>
             <p>
                 Educational apps have become a cornerstone for modern learning, providing tools for students, teachers, and lifelong learners. Here’s a roundup of some of the top educational apps of 2024 that stand out for their innovation, effectiveness, and user engagement:
             </p>
-            <button class="btn" onclick="window.location.href='/post16.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+            <button class="btn" onclick="goToPost(15)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
             <h4>3. AI for Research</h4>
             <p>AI tools have revolutionized how research is conducted by streamlining processes, uncovering insights, and expanding possibilities across various fields. Whether you're working on academic studies, market analysis, or innovative projects, here’s how AI can enhance your research efforts:
             </p>
-            <button class="btn" onclick="window.location.href='/post17.html'">Read more <span><i class="ri-arrow-right-up-line"></i></span></button>
+            <button class="btn" onclick="goToPost(16)" >Read More <span><i class="ri-arrow-right-up-line"></i></span></button>
         </div>
         <div id="searchBox">
             <input type="text" id="input" placeholder="Search our blog..." spellcheck="true">
@@ -306,7 +310,6 @@
 
 <div id="newsletterPopup" class="popup-overlay">
     <div class="popup-content">
-        <button id="closePopup" class="btn-close"><i class="ri-close-fill"></i></button>
         <h2>Subscribe to Our Newsletter</h2>
         <p>Stay updated with our latest articles and updates!</p>
         <form action="#" method="post" id="newsletterForm">
@@ -314,8 +317,6 @@
         <button type="submit" class="btn">Subscribe</button>
         </form>
     </div>
-    </div>
-
-<script src="/JS/home.js"></script>
+</div>
 </body>
 </html>
