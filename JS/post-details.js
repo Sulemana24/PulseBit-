@@ -1,6 +1,5 @@
 import { posts1 } from './postData.js';
 
-  // Get the query parameter
     const urlParams = new URLSearchParams(window.location.search);
     const postIndex = urlParams.get('post');
 

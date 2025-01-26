@@ -57,14 +57,12 @@
     const businessContent = document.getElementById("business-content");
     const educationContent = document.getElementById("education-content");
 
-    // Hide all content sections
     function hideAllContents() {
         techContent.style.display = "none";
         businessContent.style.display = "none";
         educationContent.style.display = "none";
     }
 
-    // Event listeners to categories
     techCategory.addEventListener("click", () => {
         hideAllContents();
         techContent.style.display = "block";
@@ -80,14 +78,10 @@
         educationContent.style.display = "block";
     });
 
-    // Get elements
     const popup = document.getElementById('newsletterPopup');
     const form = document.getElementById('newsletterForm');
 
-    // Check subscription status
     const isSubscribed = localStorage.getItem('subscribed');
-
-    // Show the pop-up only if the user is not subscribed
 
     if (!isSubscribed) {
         setTimeout(() => {
@@ -95,15 +89,11 @@
     }, 10000); 
     }
 
-
-    // Handle the subscription form submission
-
     form.addEventListener('submit', (e) => {
     e.preventDefault(); 
     const emailInput = form.querySelector('input[name="email"]');
 
     if (emailInput.value.trim() !== '') {
-        // Save subscription status
         localStorage.setItem('subscribed', 'true');
         alert('Thank you for subscribing!');
         popup.style.display = 'none';

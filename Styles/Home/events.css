@@ -22,6 +22,7 @@
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 1.5rem; 
+  margin-bottom: 4rem;
 }
 
 .event {
@@ -35,4 +36,5 @@
 .event-contents{
   margin-bottom: 2rem;
 }
+
 
